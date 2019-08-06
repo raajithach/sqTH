@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="@dimen/small_image_width"
+        android:layout_height="@dimen/small_image_height"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/margin_start"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/margin_top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="138dp"
+        android:id="@+id/name"
+        android:textSize="@dimen/name_text_size"
+        android:textColor="@color/colorPrimaryDark"
+        android:paddingTop="@dimen/margin_top"
+        android:layout_marginStart="@dimen/margin_start"
+        app:layout_constraintStart_toEndOf="@id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="138dp"
+        android:id="@+id/team"
+        android:textSize="@dimen/team_text_size"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginStart="@dimen/margin_start"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+</android.support.constraint.ConstraintLayout>
